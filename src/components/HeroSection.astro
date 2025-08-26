@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+---
+
+<section
+  class="section bg-black w-full h-screen text-center relative overflow-hidden z-30 flex"
+  data-header-color="white"
+  >
+  <div class="z-20 flex flex-col flex-grow font-sans">
+    <header class="relative text-white pt-40 flex flex-col">
+      <h2>Compower</h2>
+      <p>Empresa de telecomunicaciones</p>
+    </header>
+    <footer
+      class="relative text-white pt-10 flex flex-grow justify-end flex-col pb-24"
+    >
+      <div>
+        <a
+          class="border-[3px] text-sm rounded border-white bg-white/5 backdrop-blur-3xl font-medium px-6 py-2 inline-block hover:bg-white hover:text-black transition-colors duration-300"
+          href="#">Contactar</a
+        >
+      </div>
+    </footer>
+  </div>
+  <div class="absolute top-0 left-0 w-full h-screen z-10 overflow-hidden">
+    <video
+      class="object-center object-cover h-screen w-screen"
+      autoplay
+      loop
+      src="/bg.webm"></video>
+  </div>
+</section>
