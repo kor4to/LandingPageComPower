@@ -1,0 +1,34 @@
+---
+import "../styles/global.css"
+---
+<header class="py-3 px-9 flex justify-between items-center fixed top-0 w-full"   >
+    <div class="flex flex-grow basis-0">
+<!-- Isotipo CP (monocromo, hereda currentColor) -->
+<svg class="h-6 w-28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 40" fill="currentColor">
+    <text 
+      x="0" 
+      y="38" 
+      font-family="Orbitron" 
+      font-size="50" 
+      font-weight="500"
+    >
+      ComPower
+    </text>
+  </svg>
+    </div>
+    <nav>
+        <ul class="font-medium flex text-sm [&>li>a]:inline-block [&>li>a]:py-2 [&>li>a]:px-4"    >
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Experiencia</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
+    <nav class="flex flex-grow justify-end basis-0">
+        <ul class="font-medium flex text-sm [&>li>a]:inline-block [&>li>a]:py-2 [&>li>a]:px-4">
+            <li><a href="#">Contacto</a></li>
+        </ul>       
+    </nav>
+</header>
