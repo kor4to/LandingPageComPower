@@ -1,0 +1,62 @@
+---
+import "../styles/global.css";
+
+export interface Props {
+  titulo?: string;
+  descripcion?: string;
+  imagenSrc?: string;
+  imagenAlt?: string;
+}
+
+const {
+  titulo = "¿Quiénes somos?",
+  descripcion = "Compower Ingeniería Especializada SAC (ComPower), es una empresa peruana con sede en Lima, que provee servicios de ingeniería e implementación de infraestructura para el sector telecomunicaciones. Integrada por profesionales de amplia trayectoria en el sector, ComPower presta servicios a nivel nacional atendiendo proyectos multidisciplinarios. El despliegue de nuestros proyectos se sustenta en tres pilares fundamentales: Orientación al cliente. Calidad de servicio. Bioseguridad y Protección del medio ambiente.",
+  imagenSrc = "/src/assets/nosotros.jpg",
+  imagenAlt = "Nuestro equipo",
+} = Astro.props;
+---
+
+<section
+  class="section w-full h-screen text-center relative overflow-hidden z-30 flex items-center justify-center pt-20"
+  data-header-color="black"
+>
+  <div class="max-w-6xl mx-auto px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-96">
+      <!-- Contenido de texto (izquierda) -->
+      <div class="flex flex-col justify-start">
+        <h2
+          class="text-5xl lg:text-5xl font-bold text-gray-800 mb-8 leading-tight text-left lg:text-left"
+        >
+          ¿Quiénes somos?
+        </h2>
+        <p
+          class="text-xl lg:text-2xl leading-relaxed text-gray-600 text-justify lg:text-justify mb-6"
+        >
+          Compower Ingeniería Especializada SAC (ComPower), es una empresa
+          peruana con sede en Lima, que provee servicios de ingeniería e
+          implementación de infraestructura para el sector telecomunicaciones.
+          Integrada por profesionales de amplia trayectoria en el sector,
+          ComPower presta servicios a nivel nacional atendiendo proyectos
+          multidisciplinarios. El despliegue de nuestros proyectos se sustenta
+          en tres pilares fundamentales:
+        </p>
+        <ul
+          class="text-xl lg:text-2xl leading-relaxed text-gray-600 text-justify lg:text-justify space-y-2"
+        >
+          <li>- Orientación al cliente.</li>
+          <li>- Calidad de servicio.</li>
+          <li>- Bioseguridad y Protección del medio ambiente.</li>
+        </ul>
+      </div>
+
+      <!-- Imagen (derecha) -->
+      <div class="flex justify-center items-center">
+        <img
+          src={imagenSrc}
+          alt={imagenAlt}
+          class="w-full max-w-2xl h-auto rounded-xl shadow-2xl object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+    </div>
+  </div>
+</section>

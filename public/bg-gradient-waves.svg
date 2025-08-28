@@ -1,0 +1,33 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Ocean gradient -->
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#0284C7;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#0369A1;stop-opacity:0.4"/>
+    </linearGradient>
+    <!-- Wave pattern -->
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7DD3FC;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#0284C7;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="100%" height="100%" fill="#F0F9FF"/>
+  
+  <!-- Flowing waves -->
+  <path d="M0,400 Q480,300 960,400 T1920,350 L1920,1080 L0,1080 Z" fill="url(#oceanGrad)"/>
+  <path d="M0,500 Q320,420 640,500 T1280,480 T1920,450 L1920,1080 L0,1080 Z" fill="url(#waveGrad)"/>
+  
+  <!-- Floating elements -->
+  <circle cx="300" cy="200" r="40" fill="#7DD3FC" opacity="0.4"/>
+  <circle cx="1600" cy="250" r="60" fill="#0EA5E9" opacity="0.3"/>
+  <circle cx="800" cy="150" r="25" fill="#0284C7" opacity="0.5"/>
+  
+  <!-- Subtle dots pattern -->
+  <circle cx="150" cy="300" r="3" fill="#0369A1" opacity="0.6"/>
+  <circle cx="450" cy="180" r="2" fill="#0284C7" opacity="0.7"/>
+  <circle cx="1200" cy="320" r="4" fill="#7DD3FC" opacity="0.5"/>
+  <circle cx="1500" cy="180" r="3" fill="#0EA5E9" opacity="0.6"/>
+</svg>

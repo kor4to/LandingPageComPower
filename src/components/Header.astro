@@ -6,6 +6,7 @@ import Logo from "../components/logo.astro";
 <header
   id="header"
   class="py-3 px-9 flex justify-between items-center fixed top-0 w-screen z-40"
+  style="transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);"
 >
   <Logo />
   <nav class="flex flex-grow justify-centerv basis-0">
@@ -43,6 +44,18 @@ import Logo from "../components/logo.astro";
       if (isIntersecting) {
         const color = entry.target.getAttribute("data-header-color")
         header.style.color = color ?? ""
+        
+        // Add white background and shadow for sections with SVG background
+        if (color === "black") {
+          header.style.backgroundColor = "rgba(255, 255, 255, 0.95)"
+          header.style.backdropFilter = "blur(10px)"
+          header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"
+        } else {
+          // Smooth transition back to transparent for hero section
+          header.style.backgroundColor = "rgba(255, 255, 255, 0)"
+          header.style.backdropFilter = "blur(0px)"
+          header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0)"
+        }
       }
     })
   }, observerOptions)

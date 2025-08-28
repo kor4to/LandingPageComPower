@@ -1,0 +1,43 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Forest gradient -->
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#86EFAC;stop-opacity:0.8"/>
+      <stop offset="40%" style="stop-color:#22C55E;stop-opacity:0.6"/>
+      <stop offset="80%" style="stop-color:#16A34A;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#15803D;stop-opacity:0.3"/>
+    </linearGradient>
+    <!-- Leaf pattern -->
+    <radialGradient id="leafGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4ADE80;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#22C55E;stop-opacity:0.2"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="100%" height="100%" fill="#F0FDF4"/>
+  
+  <!-- Tree silhouettes -->
+  <ellipse cx="200" cy="900" rx="80" ry="180" fill="url(#forestGrad)"/>
+  <ellipse cx="400" cy="850" rx="100" ry="230" fill="url(#forestGrad)"/>
+  <ellipse cx="1500" cy="880" rx="90" ry="200" fill="url(#forestGrad)"/>
+  <ellipse cx="1700" cy="920" rx="70" ry="160" fill="url(#forestGrad)"/>
+  
+  <!-- Organic shapes -->
+  <path d="M0,600 Q300,500 600,600 Q900,700 1200,600 Q1500,500 1920,600 L1920,1080 L0,1080 Z" fill="url(#leafGrad)"/>
+  
+  <!-- Floating leaves -->
+  <ellipse cx="300" cy="200" rx="15" ry="8" fill="#22C55E" opacity="0.6" transform="rotate(45 300 200)"/>
+  <ellipse cx="800" cy="150" rx="12" ry="6" fill="#16A34A" opacity="0.7" transform="rotate(-30 800 150)"/>
+  <ellipse cx="1400" cy="250" rx="18" ry="10" fill="#4ADE80" opacity="0.5" transform="rotate(60 1400 250)"/>
+  <ellipse cx="600" cy="300" rx="10" ry="5" fill="#15803D" opacity="0.8" transform="rotate(-45 600 300)"/>
+  
+  <!-- Branch-like lines -->
+  <path d="M100,400 Q300,350 500,400" stroke="#16A34A" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M1200,300 Q1400,250 1600,300" stroke="#22C55E" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Small organic dots -->
+  <circle cx="250" cy="450" r="4" fill="#22C55E" opacity="0.6"/>
+  <circle cx="750" cy="380" r="3" fill="#16A34A" opacity="0.7"/>
+  <circle cx="1300" cy="420" r="5" fill="#4ADE80" opacity="0.5"/>
+</svg>
